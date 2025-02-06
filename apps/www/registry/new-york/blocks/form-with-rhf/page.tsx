@@ -61,7 +61,6 @@ export default function FormWithRHF() {
           hideRequiredAsterisk
           placeholder="Type your test username"
         />
-
       </form>
 
       <br />
