@@ -1,10 +1,10 @@
 import React from "react"
 import {
-  Control,
-  Controller,
-  FieldErrors,
-  FieldValues,
-  Path,
+    Control,
+    Controller,
+    FieldValues,
+    FormState,
+    Path,
 } from "react-hook-form"
 
 import { cn } from "@/registry/new-york/lib/utils"
@@ -12,7 +12,7 @@ import { Input } from "@/registry/new-york/ui/input"
 import { Label } from "@/registry/new-york/ui/label"
 
 interface Props<T extends FieldValues> extends React.ComponentProps<"input"> {
-  errors: FieldErrors<T>
+  formState: FormState<T>
   control: Control<T>
   name: Path<T>
   label?: string
@@ -31,7 +31,7 @@ interface Props<T extends FieldValues> extends React.ComponentProps<"input"> {
 export default function RHFInput<T extends FieldValues>({
   control,
   name,
-  errors,
+  formState,
   label,
   labelClassName,
   description,
@@ -41,7 +41,7 @@ export default function RHFInput<T extends FieldValues>({
   hideRequiredAsterisk = false,
   ...rest
 }: Props<T>) {
-  const error = errors?.[name]
+  const error = formState.errors?.[name]
   const errorMessage = error ? String(error?.message) : null
 
   return (

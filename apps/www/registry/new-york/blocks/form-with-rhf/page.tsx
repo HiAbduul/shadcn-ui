@@ -51,7 +51,7 @@ export default function FormWithRHF() {
         <RHFInput
           name="username"
           control={form.control}
-          errors={form.formState.errors}
+          formState={form.formState}
           label="Test username"
           labelClassName=""
           description="This is your public display name."
