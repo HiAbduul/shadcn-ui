@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form-with-rhf",
+  "type": "registry:block",
+  "title": "Form",
+  "author": "Abduul (https://abduul.dev)",
+  "description": "A set of pre-integrated form components built with React Hook Form for easier development and providing a better experience.",
+  "dependencies": [
+    "react-hook-form",
+    "zod"
+  ],
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "blocks/form-with-rhf/page.tsx",
+      "content": "export default function FormWithRHF() {\r\n  return (\r\n    <div>FormWithRHF</div>\r\n  )\r\n}\r\n",
+      "type": "registry:page",
+      "target": "app/form/page.tsx"
+    },
+    {
+      "path": "blocks/form-with-rhf/components/rhf-input.tsx",
+      "content": "import React from 'react'\r\n\r\nexport default function RHFInput() {\r\n  return (\r\n    <div>RHFInput</div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "categories": [
+    "form"
+  ]
+}

@@ -1277,6 +1277,25 @@ export const Index: Record<string, any> = {
       source: "__registry__/new-york/blocks/login-05/page.tsx",
       meta: undefined,
     },
+    "form-with-rhf": {
+      name: "form-with-rhf",
+      description: "A set of pre-integrated form components built with React Hook Form for easier development and providing a better experience.",
+      type: "registry:block",
+      registryDependencies: ["input"],
+      files: [{
+        path: "registry/new-york/blocks/form-with-rhf/page.tsx",
+        type: "registry:page",
+        target: "app/form/page.tsx"
+      },{
+        path: "registry/new-york/blocks/form-with-rhf/components/rhf-input.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["form"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/form-with-rhf/page.tsx")),
+      source: "__registry__/new-york/blocks/form-with-rhf/page.tsx",
+      meta: undefined,
+    },
     "chart-area-axes": {
       name: "chart-area-axes",
       description: "",
@@ -6573,6 +6592,25 @@ export const Index: Record<string, any> = {
       categories: ["authentication","login"],
       component: React.lazy(() => import("@/registry/default/blocks/login-05/page.tsx")),
       source: "__registry__/default/blocks/login-05/page.tsx",
+      meta: undefined,
+    },
+    "form-with-rhf": {
+      name: "form-with-rhf",
+      description: "A set of pre-integrated form components built with React Hook Form for easier development and providing a better experience.",
+      type: "registry:block",
+      registryDependencies: ["input"],
+      files: [{
+        path: "registry/default/blocks/form-with-rhf/page.tsx",
+        type: "registry:page",
+        target: "app/form/page.tsx"
+      },{
+        path: "registry/default/blocks/form-with-rhf/components/rhf-input.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["form"],
+      component: React.lazy(() => import("@/registry/default/blocks/form-with-rhf/page.tsx")),
+      source: "__registry__/default/blocks/form-with-rhf/page.tsx",
       meta: undefined,
     },
     "chart-area-axes": {

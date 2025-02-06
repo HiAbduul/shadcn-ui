@@ -617,4 +617,26 @@ export const blocks: Registry["items"] = [
     ],
     categories: ["authentication", "login"],
   },
+  {
+    name: "form-with-rhf",
+    author: "Abduul (https://abduul.dev)",
+    title: "Form",
+    description:
+      "A set of pre-integrated form components built with React Hook Form for easier development and providing a better experience.",
+    type: "registry:block",
+    registryDependencies: ["input"],
+    dependencies: ["react-hook-form", "zod"],
+    files: [
+      {
+        path: "blocks/form-with-rhf/page.tsx",
+        type: "registry:page",
+        target: "app/form/page.tsx",
+      },
+      {
+        path: "blocks/form-with-rhf/components/rhf-input.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["form"],
+  },
 ]
